@@ -1,0 +1,9 @@
+LangGraph is a library for building stateful, multi-actor applications with LLMs. It extends LangChain with cycles, persistence, and human-in-the-loop patterns. Graphs are defined as nodes and edges; conditional edges route based on agent decisions.
+
+Corrective RAG (CRAG) improves RAG by evaluating retrieved documents before generation. If retrieval quality is low, the system reformulates the query or supplements with web search instead of trusting bad context.
+
+Self-RAG trains or prompts models to retrieve, generate, and critique in a loop: decide whether to retrieve, judge passage relevance, and verify whether outputs are supported by evidence.
+
+Retrieval-augmented generation combines a retriever with a generator. Common failure modes include irrelevant chunks, stale knowledge, and query-document vocabulary mismatch.
+
+Query reformulation rewrites user questions into search-friendly forms: add synonyms, disambiguate entities, or decompose multi-hop questions into sub-queries.
